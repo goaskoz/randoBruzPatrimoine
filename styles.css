@@ -1,0 +1,292 @@
+/* 1er header and content */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+}
+
+.container1 {
+    margin-bottom: 4rem;
+    padding: 25px;
+    background-color: #1F2937;
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.left-header,
+.right-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-header {
+    margin-left: 2rem;
+}
+
+.right-header {
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.text-image {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 4rem;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 135px;
+    margin-left: auto; */
+    gap: 10px;
+    max-width: 370px;
+}
+
+.front-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8
+}
+
+.text {
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+.signup {
+    background-color: #3882F6;
+    /* color: white; */
+    border: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+ /* 
+ .content-image {
+    padding-right: 135px;
+    margin-right: auto;
+}
+*/
+
+/* 2e content */
+
+.container2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* gap: 52px; */
+    background-color:whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+}
+
+.card-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.container-squares {
+    max-width: 200px;
+}
+
+.mini-container-squares {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.image-square1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/wolfy4.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir entièrement la bordure sans changer son périmètre */
+    background-position: center; /* Centre l'image dans la bordure */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.image-square2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/wolfy3.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir entièrement la bordure sans changer son périmètre */
+    background-position: center; /* Centre l'image dans la bordure */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+
+.image-square3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/wolfy2.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir entièrement la bordure sans changer son périmètre */
+    background-position: center; /* Centre l'image dans la bordure */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+
+.image-square4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/wolfy5.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir entièrement la bordure sans changer son périmètre */
+    background-position: center; /* Centre l'image dans la bordure */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.text-square,
+.text-square2 {
+    padding-top: 1rem;
+}
+
+.text-square2 {
+    font-style: italic;
+    font-size: small;
+}
+
+/* 3e content */
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    height: 360px;
+    padding: 16px;
+}
+
+.italic-quote {
+    max-width: 800px;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.name-quote {
+    margin-top: 1.5rem;
+    margin-left: 200px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* 4e content */
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 450px;
+}
+
+.rectangle {
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 15px;
+    width: 1000px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+
+.rectangle {
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.text-content-rect {
+    color: white;
+}
+
+.top-content-rect {
+    font-size: 23px;
+    font-weight: bold;
+    color:white;
+}
+
+.button-content-rect {
+    color: white;
+    border: 1px solid white;
+    width: 130px;
+    height: 35px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.signup-rect {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/* 5e footer */
+
+
+.footer {
+    height: 100px;
+    background-color: #1F2937;
+}
+
+.content-footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
