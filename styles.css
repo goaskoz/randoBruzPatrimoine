@@ -213,6 +213,21 @@ ul {
     font-weight: 900;
 } */
 
+.container3 {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh; /* ou toute autre hauteur désirée */
+      padding: 20px; /* Espacement autour du conteneur */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh; /* ou toute autre hauteur désirée */
+      padding: 20px; /* Espacement autour du conteneur */
+      width : 100%;
+      height: 100%;
+}
+
 /* 4e content */
 
 .container4 {
