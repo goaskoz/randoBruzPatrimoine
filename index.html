@@ -36,153 +36,51 @@
     </div>
 
     <div class="container2">
-        <div class="card-title">Wolfyception.</div>
-        <div class="mini-container-squares">
-            <div class="container-squares">
-                <div class="square">
-                    <div class="image-square1"></div>
-                </div>
-                <div class="text-square">
-                    Wolfy entend parler d'une drogue magique par ses dealers.
-                </div>
-                <div class="text-square2">
-                    Wolfy hears about a magical drug from his dealers.
-                </div>
-            </div>
-            <div class="container-squares">
-                <div class="square">
-                    <div class="image-square2"></div>
-                </div>
-                <div class="text-square">
-                    Curieux et motivé, il se lance à sa recherche.
-                </div>
-                <div class="text-square2">
-                    Curious and motivated, he sets out to find it.
-                </div>
-            </div>
-            <div class="container-squares">
-                <div class="square">
-                    <div class="image-square3"></div>
-                </div>
-                <div class="text-square">
-                    Après des jours de dur labeur, il découvre enfin ses effets fantastiques...
-                </div>
-                <div class="text-square2">
-                    After days of hard work, he finally discovers its fantastic effects...
-                </div>
-            </div>
-            <div class="container-squares">
-                <div class="square">
-                    <div class="image-square4"></div>
-                </div>
-                <div class="text-square">
-                    ...pour réaliser finalement que tout cela n'était qu'un rêve. :(
-                </div>
-                <div class="text-square2">
-                    ... only to realize that it was all just a dream. :(
-                </div>
-            </div>
-        </div>
+        <html>
+            <head>
+                <meta
+                name="viewport"
+                content="initial-scale=1,maximum-scale=1,user-scalable=no"
+                />
+                <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
+                <link
+                href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css"
+                rel="stylesheet"
+                />
+
+                <style>
+                #map {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 500px; /* modifiez la hauteur de la carte ici */
+                }
+                </style>
+            </head>
+
+            <body>
+                <div id="map"></div>
+
+                <script>
+                //Appel et configuration de la carte
+
+                var map = new mapboxgl.Map({
+                    container: "map",
+                    style:
+                    "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
+                    zoom: 15.3, // Zoom
+                    center: [-1.68, 48.106], // Centrage
+                    pitch: 60, // Inclinaison
+                    bearing: -50, // Rotation
+                    minZoom: 14.5, // Zoom min
+                });
+                </script>
+            </body>
+        </html>
     </div>
 
-    <div class="container3">
-        <!-- <div class="italic-quote"><i>Jump around (jump around)
-            Jump around (jump around)
-            Jump around (jump around)
-            Jump up, jump up, and get down
-            jump! Jump! Jump! Jump!
-            (Steady on the left) jump! Jump! Jump! Jump! (Everybody jump)
-            (Steady on the right) jump! Jump! Jump! Jump! Jump!
-            </i></div>
-        <div class="name-quote">-- Wolfy, as lead singer of House of Pain in the 1990s.</div> -->
-
-        <div class="container3">
-            <html>
-                    <head>
-                        <meta
-                        name="viewport"
-                        content="initial-scale=1,maximum-scale=1,user-scalable=no"
-                        />
-                        <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
-                        <link
-                        href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css"
-                        rel="stylesheet"
-                        />
-        
-                        <style>
-                        #map {
-                            position: relative;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            width: 50%;
-                            height: 300px;
-                        }
-                        </style>
-                    </head>
-        
-                    <body>
-                        <div id="map"></div>
-        
-                        <script>
-                        //Appel et configuration de la carte
-        
-                        var map = new mapboxgl.Map({
-                            container: "map",
-                            style:
-                            "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
-                            zoom: 15.3, // Zoom
-                            center: [-1.68, 48.106], // Centrage
-                            pitch: 60, // Inclinaison
-                            bearing: -50, // Rotation
-                            minZoom: 14.5, // Zoom min
-                        });
-                        </script>
-                    </body>
-            </html>    
-        
-
-    </div>
-
-    <div class="container4">
-        <div class="rectangle"> 
-            <div class="text-content-rect">
-                <div class="top-content-rect">Call Wolfy! It's time!</div>
-                <div class="bottom-content-rect">Sign up for wishing Wolfy a happy jump by clicking that button over there!</div>
-            </div>
-            <div class="button-content-rect">
-                <div class="signup-rect">Happy jump</div>
-            </div>
-        </div>  
-    </div>
-
-    <div class="footer">
-        <div class="content-footer">Copyright © The Wolfy Company 2023</div>
-    </div>
-    
-
-   
-        
-         
-        
 </body>
 </html>
-
-
-
-<!-- 
-    5 parties:
-        - header le + au dessus: exo 2 & exo 3.
-        - juste en-dessous: exo 5.
-        - en-dessous: exo 6.
-        - en-dessous: jsp. exo 1?
-        - en-dessous: jsp non plus.
-        - footer le plus en bas: exo 7.
-
-
-    Stratégie:
-        4 containers et un footer tout en bas
-        en flex-direction: column;
-
- -->
