@@ -81,6 +81,26 @@
                     bearing: -50, // Rotation
                     minZoom: 14.5, // Zoom min
                 });
+
+                map.addSource("points-de-repères.geojson", {
+                    type: "geojson",
+                    data: "https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/points-de-rep%C3%A8res.geojson",
+                });
+
+                // Ajouter la couche
+                map.addLayer({
+                id: "pointsDeRepereLayer",
+                type: "circle",
+                source: "pointsDeRepere",
+                paint: {
+                    "circle-stroke-color": "white",
+                    "circle-stroke-width": 3,
+                    "circle-radius": 6,
+                    "circle-color": "#0074D9"
+                }
+                });
+
+
                 </script>
             </body>
         </html>
