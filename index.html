@@ -81,6 +81,12 @@
                 minZoom: 14.5, // Zoom min
             });
 
+                // Wait for the map style to finish loading
+                map.on('style.load', function() {
+                    // Call the function to add the markers
+                    addReperesRando();
+                });
+
 
                 // Ajouter la source de données
                 function addReperesRando() {
@@ -114,10 +120,6 @@
                             console.error("An error occurred while fetching or processing the data:", error);
                         });
                 }
-
-                // Call the function to add the markers
-                addReperesRando();
-
 
                 </script>
             </body>
