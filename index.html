@@ -15,58 +15,53 @@
             left: 0;
         }
     </style>
-    <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
 </head>
 
 <body>
 
 <!-- First container --> 
 
-    <div class="container1">
-        <!-- Contenu de votre premier conteneur -->
-    </div>
+<div class="container1">
+    <!-- Contenu de votre premier conteneur -->
+</div>
 
 <!-- Second container --> 
 
-    <div class="container2">
-        <div id="map"></div>
-    </div>
+<div class="container2">
+    <div id="map"></div>
+</div>
 
-    <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
-    <link href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css" rel="stylesheet">
+<script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
+<script>
+    var map = new mapboxgl.Map({
+        container: "map",
+        style: "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json",
+        zoom: 15.3,
+        center: [-1.747136, 48.024462],
+        pitch: 60,
+        bearing: -50,
+        minZoom: 14.5
+    });
 
-    <script>
-        var map = new mapboxgl.Map({
-            container: "map",
-            style: "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json",
-            zoom: 15.3,
-            center: [-1.747136, 48.024462],
-            pitch: 60,
-            bearing: -50,
-            minZoom: 14.5
-        });
+    // Ajouter la source de données
+    map.addSource("reperesRando", {
+        type: "geojson",
+        data: "https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson",
+    });
 
-        // Ajouter la source de données
-            map.addSource("reperesRando", {
-                type: "geojson",
-                data:
-                 "https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson",
-            });
-
-            // Ajouter la couche de points
-            map.addLayer({
-                id: "reperesRando",
-                type: "circle",
-                source: "reperesRando",
-                paint: {
-                    "circle-stroke-color": "white",
-                    "circle-stroke-width": 3,
-                    "circle-radius": 6,
-                    "circle-color": "#0074D9"
-                }
-            });
-        });
-    </script>
+    // Ajouter la couche de points
+    map.addLayer({
+        id: "reperesRando",
+        type: "circle",
+        source: "reperesRando",
+        paint: {
+            "circle-stroke-color": "white",
+            "circle-stroke-width": 3,
+            "circle-radius": 6,
+            "circle-color": "#0074D9"
+        }
+    });
+</script>
 
 </body>
 </html>
