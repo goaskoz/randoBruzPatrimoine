@@ -85,34 +85,8 @@
                 // Ajouter la source de données
                 map.addSource("pointsDeRepere", {
                 type: "geojson",
-                data: {
-                    type: "FeatureCollection",
-                    name: "points-de-repères",
-                    crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                    features: [
-                    { type: "Feature", properties: { id: 1, rando: "Manoir de la Noë" }, geometry: { type: "Point", coordinates: [-1.75183938548356, 48.021545588317458] } },
-                    { type: "Feature", properties: { id: 0, rando: "Parc de la Herverie" }, geometry: { type: "Point", coordinates: [-1.750997908366768, 48.024475510946225] } },
-                    { type: "Feature", properties: { id: 2, rando: "Cabinet d'architecture" }, geometry: { type: "Point", coordinates: [-1.749047374624584, 48.023139111604912] } },
-                    { type: "Feature", properties: { id: 3, rando: "G20" }, geometry: { type: "Point", coordinates: [-1.746753816329596, 48.023947943620513] } },
-                    { type: "Feature", properties: { id: 4, rando: "L'Ostal" }, geometry: { type: "Point", coordinates: [-1.747347943870081, 48.024060971576439] } },
-                    { type: "Feature", properties: { id: 5, rando: "Bruz-Centre" }, geometry: { type: "Point", coordinates: [-1.747579017093493, 48.02457091521449] } },
-                    { type: "Feature", properties: { id: 7, rando: "Kiosque" }, geometry: { type: "Point", coordinates: [-1.746447572303377, 48.024292703602221] } },
-                    { type: "Feature", properties: { id: 6, rando: "Rondpoint" }, geometry: { type: "Point", coordinates: [-1.746740322735391, 48.024647582658559] } },
-                    { type: "Feature", properties: { id: 8, rando: "Mairie" }, geometry: { type: "Point", coordinates: [-1.745876885398653, 48.024482541649199] } },
-                    { type: "Feature", properties: { id: 9, rando: "Le Grand Logis" }, geometry: { type: "Point", coordinates: [-1.745197283999986, 48.023350426665438] } },
-                    { type: "Feature", properties: { id: 10, rando: "Cimetière" }, geometry: { type: "Point", coordinates: [-1.74383721428459, 48.023611492130541] } },
-                    { type: "Feature", properties: { id: 11, rando: "Square rond point Vau Gaillard" }, geometry: { type: "Point", coordinates: [-1.744925249220352, 48.025107783866694] } },
-                    { type: "Feature", properties: { id: 12, rando: "La Providence" }, geometry: { type: "Point", coordinates: [-1.748200453216257, 48.026062695182603] } },
-                    { type: "Feature", properties: { id: 13, rando: "Ecole Jacques Prévert" }, geometry: { type: "Point", coordinates: [-1.748437883909554, 48.026561149499976] } },
-                    { type: "Feature", properties: { id: 14, rando: "Second RMAT" }, geometry: { type: "Point", coordinates: [-1.749233693997537, 48.027826219789361] } },
-                    { type: "Feature", properties: { id: 15, rando: "Maisons de quartier" }, geometry: { type: "Point", coordinates: [-1.75031145978612, 48.027790984498168] } },
-                    { type: "Feature", properties: { id: 16, rando: "Gare de Bruz" }, geometry: { type: "Point", coordinates: [-1.751391555444828, 48.028467414780486] } },
-                    { type: "Feature", properties: { id: 17, rando: "Rue de la Boissousel" }, geometry: { type: "Point", coordinates: [-1.752644997570135, 48.025797765650523] } },
-                    { type: "Feature", properties: { id: 18, rando: "Mine 2GM" }, geometry: { type: "Point", coordinates: [-1.74994231600716, 48.024082071504317] } },
-                    { type: "Feature", properties: { id: 19, rando: "Presbytère" }, geometry: { type: "Point", coordinates: [-1.748559802614701, 48.024049317640575] } },
-                    { type: "Feature", properties: { id: 20, rando: "Place du Chanoine Roullin" }, geometry: { type: "Point", coordinates: [-1.747879264407958, 48.024153684658955] } }
-                    ]
-                }
+                data: 
+                    "https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/points-de-rep%C3%A8res.geojson"
                 });
 
                 // Ajouter la couche
