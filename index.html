@@ -84,30 +84,33 @@
 
                 // Ajouter la source de données
                 function addReperesRando() {
-                    fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson")
-                        .then(response => response.json())
-                        .then(data => {
-                            map.addSource("reperesRando", {
-                                type: "geojson",
-                                data: data
-                            });
-
-                            map.addLayer({
-                                id: "reperesRando",
-                                type: "circle",
-                                source: "reperesRando",
-                                paint: {
-                                    "circle-stroke-color": "white",
-                                    "circle-stroke-width": 3,
-                                    "circle-radius": 6,
-                                    "circle-color": "#0074D9"
-                                }
-                            });
-                        })
-                        .catch(error => {
-                            console.error("Une erreur s'est produite lors de la récupération des repères de randonnée :", error);
+                fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson")
+                    .then(response => response.json())
+                    .then(data => {
+                        map.addSource("reperesRando", {
+                            type: "geojson",
+                            data: data
                         });
-                }
+
+                        map.addLayer({
+                            id: "reperesRando",
+                            type: "circle",
+                            source: "reperesRando",
+                            paint: {
+                                "circle-stroke-color": "white",
+                                "circle-stroke-width": 3,
+                                "circle-radius": 6,
+                                "circle-color": "#0074D9"
+                            }
+                        });
+                    })
+                    .catch(error => {
+                        console.error("Une erreur s'est produite lors de la récupération des données :", error);
+                    });
+            }
+
+                    // Appel de la fonction pour ajouter les repères
+                    addReperesRando();
 
 
                 </script>
