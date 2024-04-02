@@ -51,65 +51,73 @@ var map = new mapboxgl.Map({
     }
 
 
-   // Sélectionner les boutons spécifiques
-const buttonsToFlyTo = document.querySelectorAll("#Manoir, #Herverie, #Archi, #BruzCentre, #GrandLogis, #Cimetiere, #VauGaillard, #Providence, #JacquesPrevert, #2eRMAT, #QuartierGare, #GareBruz, #Boissousel, #Mine2GM, #Presbytere, #ChanoineRoullin");
+// Sélectionner les boutons spécifiques
+const buttonsToFlyTo = document.querySelectorAll("#Manoir Noë, #Parc de la Herverie, #Cabinet architecture, #Bruz-Centre, #Grand Logis, #Cimetière, #Vau Gaillard, #La Providence, #Jacques Prévert, #2e RMAT, #Quartier de gare, #Gare de Bruz, #Rue Boissousel, #Mine 2GM, #Presbytère, #Pl. C. Roullin");
 
-// Parcourir chaque bouton sélectionné et ajouter un écouteur d'événements
-buttonsToFlyTo.forEach(button => {
-    button.addEventListener("click", function() {
-        // Appeler la fonction flyToLocation avec les coordonnées appropriées
-        switch (button.id) {
-            case "Manoir":
-                flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
-                break;
-            case "Herverie":
-                flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
-                break;
-            case "Archi":
-                flyToLocation(12, [-1.749047374624584, 48.023139111604912], 0, 0);
-                break;
-            case "BruzCentre":
-                flyToLocation(12, [-1.747579017093493, 48.02457091521449], 0, 0);
-                break;
-            case "GrandLogis":
-                flyToLocation(12, [-1.745197283999986, 48.023350426665438], 0, 0);
-                break;
-            case "Cimetiere":
-                flyToLocation(12, [-1.74383721428459, 48.023611492130541], 0, 0);
-                break;
-            case "VauGaillard":
-                flyToLocation(12, [-1.744925249220352, 48.025107783866694], 0, 0);
-                break;
-            case "Providence":
-                flyToLocation(12, [-1.748200453216257, 48.026062695182603], 0, 0);
-                break;
-            case "JacquesPrevert":
-                flyToLocation(12, [-1.748437883909554, 48.026561149499976], 0, 0);
-                break;
-            case "2eRMAT":
-                flyToLocation(12, [-1.749233693997537, 48.027826219789361], 0, 0);
-                break;
-            case "QuartierGare":
-                flyToLocation(12, [-1.75031145978612, 48.027790984498168], 0, 0);
-                break;
-            case "GareBruz":
-                flyToLocation(12, [-1.751391555444828, 48.028467414780486], 0, 0);
-                break;
-            case "Boissousel":
-                flyToLocation(12, [-1.752644997570135, 48.025797765650523], 0, 0);
-                break;
-            case "Mine2GM":
-                flyToLocation(12, [-1.74994231600716, 48.024082071504317], 0, 0);
-                break;
-            case "Presbytere":
-                flyToLocation(12, [-1.748559802614701, 48.024049317640575], 0, 0);
-                break;
-            case "ChanoineRoullin":
-                flyToLocation(12, [-1.747879264407958, 48.024153684658955], 0, 0);
-                break;
-            default:
-                // Si l'ID du bouton ne correspond à aucun cas, ne rien faire
-                break;
-        }
-    });
+// Configuration des événements pour chaque bouton
+document.getElementById('Manoir Noë').addEventListener('click', function () {
+    flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
 });
+
+document.getElementById('Parc de la Herverie').addEventListener('click', function () {
+    flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
+});
+
+document.getElementById('Cabinet architecture').addEventListener('click', function () {
+    flyToLocation(12, [-1.749047374624584, 48.023139111604912], 0, 0);
+});
+
+document.getElementById('Bruz-Centre').addEventListener('click', function () {
+    flyToLocation(12, [-1.747579017093493, 48.02457091521449], 0, 0);
+});
+
+document.getElementById('Grand Logis').addEventListener('click', function () {
+    flyToLocation(12, [-1.745197283999986, 48.023350426665438], 0, 0);
+});
+
+document.getElementById('Cimetière').addEventListener('click', function () {
+    flyToLocation(12, [-1.74383721428459, 48.023611492130541], 0, 0);
+});
+
+document.getElementById('Vau Gaillard').addEventListener('click', function () {
+    flyToLocation(12, [-1.744925249220352, 48.025107783866694], 0, 0);
+});
+
+document.getElementById('La Providence').addEventListener('click', function () {
+    flyToLocation(12, [-1.748200453216257, 48.026062695182603], 0, 0);
+});
+
+document.getElementById('Jacques Prévert').addEventListener('click', function () {
+    flyToLocation(12, [-1.748437883909554, 48.026561149499976], 0, 0);
+});
+
+document.getElementById('2e RMAT').addEventListener('click', function () {
+    flyToLocation(12, [-1.749233693997537, 48.027826219789361], 0, 0);
+});
+
+document.getElementById('Quartier de gare').addEventListener('click', function () {
+    flyToLocation(12, [-1.75031145978612, 48.027790984498168], 0, 0);
+});
+
+document.getElementById('Gare de Bruz').addEventListener('click', function () {
+    flyToLocation(12, [-1.751391555444828, 48.028467414780486], 0, 0);
+});
+
+document.getElementById('Rue Boissousel').addEventListener('click', function () {
+    flyToLocation(12, [-1.752644997570135, 48.025797765650523], 0, 0);
+});
+
+document.getElementById('Mine 2GM').addEventListener('click', function () {
+    flyToLocation(12, [-1.74994231600716, 48.024082071504317], 0, 0);
+});
+
+document.getElementById('Presbytère').addEventListener('click', function () {
+    flyToLocation(12, [-1.748559802614701, 48.024049317640575], 0, 0);
+});
+
+document.getElementById('Pl. C. Roullin').addEventListener('click', function () {
+    flyToLocation(12, [-1.747879264407958, 48.024153684658955], 0, 0);
+});
+
+
+
