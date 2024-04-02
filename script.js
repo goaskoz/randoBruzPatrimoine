@@ -50,74 +50,161 @@ var map = new mapboxgl.Map({
             });
     }
 
-
 // Sélectionner les boutons spécifiques
-const buttonsToFlyTo = document.querySelectorAll("#Manoir Noë, #Parc de la Herverie, #Cabinet architecture, #Bruz-Centre, #Grand Logis, #Cimetière, #Vau Gaillard, #La Providence, #Jacques Prévert, #2e RMAT, #Quartier de gare, #Gare de Bruz, #Rue Boissousel, #Mine 2GM, #Presbytère, #Pl. C. Roullin");
+const buttonsToFlyTo = document.querySelectorAll("#Manoir, #Herverie, #Archi, #BruzCentre, #GrandLogis, #Cimetiere, #VauGaillard, #Providence, #JacquesPrevert, #2eRMAT, #QuartierGare, #GareBruz, #Boissousel, #Mine2GM, #Presbytere, #ChanoineRoullin");
 
-// Configuration des événements pour chaque bouton
-document.getElementById('Manoir Noë').addEventListener('click', function () {
-    flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
+// Configuration onglets géographiques
+document.getElementById('Bruz').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.672, 48.1043],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Parc de la Herverie').addEventListener('click', function () {
-    flyToLocation(12, [-1.750997908366768, 48.024475510946225], 0, 0);
+document.getElementById('Herverie').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 16,
+        center: [-1.750997908366768, 48.024475510946225],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Cabinet architecture').addEventListener('click', function () {
-    flyToLocation(12, [-1.749047374624584, 48.023139111604912], 0, 0);
+document.getElementById('Manoir').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.75183938548356, 48.021545588317458],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Bruz-Centre').addEventListener('click', function () {
-    flyToLocation(12, [-1.747579017093493, 48.02457091521449], 0, 0);
+document.getElementById('Archi').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 16,
+        center: [-1.749047374624584, 48.023139111604912],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Grand Logis').addEventListener('click', function () {
-    flyToLocation(12, [-1.745197283999986, 48.023350426665438], 0, 0);
+document.getElementById('BruzCentre').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.747579017093493, 48.02457091521449],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Cimetière').addEventListener('click', function () {
-    flyToLocation(12, [-1.74383721428459, 48.023611492130541], 0, 0);
+document.getElementById('GrandLogis').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.745197283999986, 48.023350426665438],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Vau Gaillard').addEventListener('click', function () {
-    flyToLocation(12, [-1.744925249220352, 48.025107783866694], 0, 0);
+document.getElementById('Cimetiere').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.74383721428459, 48.023611492130541],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('La Providence').addEventListener('click', function () {
-    flyToLocation(12, [-1.748200453216257, 48.026062695182603], 0, 0);
+document.getElementById('VauGaillard').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.744925249220352, 48.025107783866694],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Jacques Prévert').addEventListener('click', function () {
-    flyToLocation(12, [-1.748437883909554, 48.026561149499976], 0, 0);
+document.getElementById('Providence').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.748200453216257, 48.026062695182603],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('2e RMAT').addEventListener('click', function () {
-    flyToLocation(12, [-1.749233693997537, 48.027826219789361], 0, 0);
+document.getElementById('JacquesPrevert').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.748437883909554, 48.026561149499976],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Quartier de gare').addEventListener('click', function () {
-    flyToLocation(12, [-1.75031145978612, 48.027790984498168], 0, 0);
+document.getElementById('2eRMAT').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.749233693997537, 48.027826219789361],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Gare de Bruz').addEventListener('click', function () {
-    flyToLocation(12, [-1.751391555444828, 48.028467414780486], 0, 0);
+document.getElementById('QuartierGare').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.75031145978612, 48.027790984498168],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Rue Boissousel').addEventListener('click', function () {
-    flyToLocation(12, [-1.752644997570135, 48.025797765650523], 0, 0);
+document.getElementById('GareBruz').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.751391555444828, 48.028467414780486],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Mine 2GM').addEventListener('click', function () {
-    flyToLocation(12, [-1.74994231600716, 48.024082071504317], 0, 0);
+document.getElementById('Boissousel').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.752644997570135, 48.025797765650523],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Presbytère').addEventListener('click', function () {
-    flyToLocation(12, [-1.748559802614701, 48.024049317640575], 0, 0);
+document.getElementById('Mine2GM').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.74994231600716, 48.024082071504317],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
-document.getElementById('Pl. C. Roullin').addEventListener('click', function () {
-    flyToLocation(12, [-1.747879264407958, 48.024153684658955], 0, 0);
+document.getElementById('Presbytere').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.748559802614701, 48.024049317640575],
+        pitch: 0,
+        bearing: 0
+    });
 });
 
+document.getElementById('ChanoineRoullin').addEventListener('click', function () {
+    map.flyTo({
+        zoom: 12,
+        center: [-1.747879264407958, 48.024153684658955],
+        pitch: 0,
+        bearing: 0
+    });
+});
 
 
