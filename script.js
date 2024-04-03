@@ -2,7 +2,7 @@
 
 var map = new mapboxgl.Map({
     container: "map",
-    style: "https://geoserveis.icgc.cat/contextmaps/icgc_orto_estandard.json", //Fond de carte
+    style: "https://vectortiles.ign.fr/demonstrateur/styles/planign.json", //Fond de carte
     zoom: 15.3, // Zoom
     center: [-1.747136, 48.024462], // Centrage
     pitch: 60, // Inclinaison
