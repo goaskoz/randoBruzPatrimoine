@@ -19,7 +19,8 @@ var map = new mapboxgl.Map({
 
     // Ajouter la source de données
     function addReperesRando() {
-        fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson")
+      //  fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson") 
+        fetch("https://geoserveis.icgc.cat/contextmaps/icgc_orto_estandard.json")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
