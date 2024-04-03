@@ -1,13 +1,14 @@
 //Appel et configuration de la carte
 
 var map = new mapboxgl.Map({
-    container: "map",
-    style: "https://vectortiles.ign.fr/demonstrateur/styles/planign.json", //Fond de carte
-    zoom: 15.3, // Zoom
-    center: [-1.747136, 48.024462], // Centrage
-    pitch: 60, // Inclinaison
-    bearing: -50, // Rotation
-    minZoom: 14.5, // Zoom min
+        container: "map",
+        style:
+          "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
+        zoom: 15.3, // Zoom
+        center: [-1.68, 48.106], // Centrage
+        pitch: 60, // Inclinaison
+        bearing: -50, // Rotation
+        minZoom: 14.5, // Zoom min
 });
 
     // Wait for the map style to finish loading
