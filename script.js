@@ -2,8 +2,7 @@
 
 var map = new mapboxgl.Map({
         container: "map",
-        style:
-          "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
+        style: "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
         zoom: 15.3, // Zoom
         center: [-1.68, 48.106], // Centrage
         pitch: 60, // Inclinaison
