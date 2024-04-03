@@ -2,7 +2,7 @@
 
 var map = new mapboxgl.Map({
     container: "map",
-    style: "https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json", //Fond de carte
+    style: "https://geoserveis.icgc.cat/contextmaps/icgc_orto_estandard.json", //Fond de carte
     zoom: 15.3, // Zoom
     center: [-1.747136, 48.024462], // Centrage
     pitch: 60, // Inclinaison
@@ -19,8 +19,7 @@ var map = new mapboxgl.Map({
 
     // Ajouter la source de données
     function addReperesRando() {
-      //  fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson") 
-        fetch("https://geoserveis.icgc.cat/contextmaps/icgc_orto_estandard.json")
+        fetch("https://raw.githubusercontent.com/goaskoz/randoBruzPatrimoine/main/reperesRando.geojson")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
