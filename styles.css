@@ -11,3 +11,27 @@ body {
     padding: 25px;
     background-color: #1F2937;
 }
+
+.header {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.left-header,
+.right-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-header {
+    margin-left: 2rem;
+}
+
+.right-header {
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
