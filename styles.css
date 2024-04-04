@@ -79,7 +79,7 @@ ul {
     background-color: #3882F6;
     /* color: white; */
     border: none;
-    width: 110px;
+    width: 160px;
     height: 30px;
     border-radius: 7px;
     overflow: hidden;
@@ -89,4 +89,35 @@ ul {
     font-weight: 600;
 }
 
+/* ... */
+
+#map {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; /* Modifiez la hauteur ici */
+}
+
+/* ... */
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #3882F6; /* Ajoutez un cadre */
+    border-radius: 7px; /* Ajoutez un rayon aux coins */
+    padding: 10px; /* Ajoutez un remplissage interne */
+    gap: 10px;
+    margin: 20px; /* Ajoutez une marge externe */
+}
+
+.btn-group-geo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
