@@ -35,3 +35,58 @@ body {
     margin-right: 4rem;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.text-image {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 4rem;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 135px;
+    margin-left: auto; */
+    gap: 10px;
+    max-width: 370px;
+}
+
+.front-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8
+}
+
+.text {
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+.signup {
+    background-color: #3882F6;
+    /* color: white; */
+    border: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
