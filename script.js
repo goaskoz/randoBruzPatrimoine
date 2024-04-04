@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Déplacez la carte vers les coordonnées correspondantes
           map.flyTo({
             center: coordonnees,
-            zoom: 20
+            zoom: 13
           });
         }
       });
